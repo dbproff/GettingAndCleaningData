@@ -161,7 +161,7 @@ Classes ‘data.table’ and 'data.frame':	180 obs. of  68 variables:
 
 
 ## The Code
-Project source code is in file 
+Project source code is in the file :
 ```{r}
 "run_analysis.R"
 ```
