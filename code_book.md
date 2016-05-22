@@ -4,7 +4,7 @@ title: "CODEBOOK for John Hopkins Project Course - Getting and Cleanning Data"
 
 ## Dataset structure
 
-**tidyData** the dataset contains the data for the transformed measurements of 10299 time windows in which six activities were pertformed by 30 subjects. The transormations performed on the selected measurements are the mean and standard deviation of the sensors measurements. The resulting dataset is a 10299 x 81 dataframe of 10299 obsevations and 81 variables, includig 79 features
+**tidyData**  contains the data measurements of 10299 time windows in which six activities were pertformed by 30 subjects. The transormations performed on the selected measurements are the mean and standard deviation of the sensors measurements. The resulting dataset is a 10299 x 68 dataframe of 10299 obsevations and 68 variables, includig 66 features
 ```{r}
 > 		str(tidyData)
 'data.frame':	10299 obs. of  68 variables:
@@ -77,7 +77,7 @@ title: "CODEBOOK for John Hopkins Project Course - Getting and Cleanning Data"
  $ fBodyBodyGyroJerkMag_Mean: num  -0.992 -0.996 -0.995 -0.995 -0.995 ...
  $ fBodyBodyGyroJerkMag_Std : num  -0.991 -0.996 -0.995 -0.995 -0.995 ...
 ```
-**tidyDataSummary** the dataset contains a summary of the *activeComplete* dataset. The summary is performed by taking the mean of every feature in the *activeComplete* dataset for each of the six activities and each of the 30 subjects. The resulting dataset is a 180 x 81 dataframe of 180 means for 79 variables/features.
+**tidyDataSummary**  contains a summary of the *tidyData* dataset. The summary is performed by taking the mean of every feature in the *tidyData* dataset for each of the six activities and each of the 30 subjects. The resulting dataset is a 180 x 68 dataframe of 180 means for 66 features.
 ```{r}
 > 	str(tidyDataSummary)
 Classes ‘data.table’ and 'data.frame':	180 obs. of  68 variables:
