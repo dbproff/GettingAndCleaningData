@@ -1,7 +1,7 @@
 
-project code_book : : [code_book.md](code_book.md)
+project code_book   : [code_book.md](code_book.md)
 
-Project source code is in the file : [run_analysis.R](run_analysis.R)
+Project source code : [run_analysis.R](run_analysis.R)
 
 ## The run_analysis.R script is composed of 5 major phases with the following functionality:
 
