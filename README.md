@@ -1,10 +1,13 @@
 ## The run_analysis.R script is composed of 5 major phases with the following functionality:
 
+###### Phase 0 is designed to load required libraries and download data for the project.  
+
 ###### Phase 1 is designed to merge the training and the test sets to create one data set. 
 * reads the training and its corresponding subject and activity label files 
 	and merge it into one tidy data set named (train_data).
 * reads the testing and its corresponding subject and activity label files 
 	and merge it into one tidy data set named (test_data).
+	
 ###### Phase 2		
 	
 * appropriately label the data set (train_data) and (test_data) with descriptive variable names 
