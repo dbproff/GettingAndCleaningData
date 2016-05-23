@@ -7,7 +7,7 @@
 ```{r}
 	address <- "https://github.com/dbproff/GettingAndCleaningData/raw/master/GettingCleaningData_Project_Mean.TXT"
 	address <- sub("^https", "http", address)
-	data <- read.table(url(address), header = TRUE) #if they used some other way of saving the file than a default write.table, this step will be different
+	data <- read.table(url(address), header = TRUE) 
 	View(data)
 ```
 
