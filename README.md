@@ -1,9 +1,17 @@
 
-project code_book   : [code_book.md](code_book.md)
+* project code_book   : [code_book.md](code_book.md)
 
-Project source code : [run_analysis.R](run_analysis.R)
+* Project source code : [run_analysis.R](run_analysis.R)
 
-## The run_analysis.R script is composed of 5 major phases with the following functionality:
+* To read and view ther final DataSet from GitHub  you can use this code :
+```{r}
+	address <- "https://github.com/dbproff/GettingAndCleaningData/raw/master/GettingCleaningData_Project_Mean.TXT"
+	address <- sub("^https", "http", address)
+	data <- read.table(url(address), header = TRUE) #if they used some other way of saving the file than a default write.table, this step will be different
+	View(data)
+```
+
+## The run_analysis.R script is composed of 5 phases:
 
 ###### Phase 0 is designed to load required libraries and download data for the project.  
 
